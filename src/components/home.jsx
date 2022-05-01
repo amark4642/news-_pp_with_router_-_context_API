@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { myContext } from "./body";
-import FlashScreen from "./loadingScreen";
 
 export default function Home() {
     const st = useContext(myContext);

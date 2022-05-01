@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import About from './about';
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 import Head from './head';
 import Navbar from './navbar';
 import Preview from './preview';

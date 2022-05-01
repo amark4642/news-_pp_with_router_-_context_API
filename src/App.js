@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Body from './components/body';
 import { BrowserRouter } from 'react-router-dom';
