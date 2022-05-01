@@ -46,7 +46,6 @@ export default function Body() {
                 setTempState({ pageNo: 1, isLoaded: true, error: false, about: tempState.about });
             })
     }, [])
-    console.log("navstate = " + navState.science);
     return (
         <>
             <myContext.Provider value={{

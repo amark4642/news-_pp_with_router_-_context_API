@@ -5,25 +5,6 @@ export default function Preview() {
     const st = useContext(myContext);
     const [temp, setTemp] = st.b;
     const [array, setArray] = st.a;
-
-    const handleNext = () => {
-        setTemp({
-            pageNo: temp.pageNo + 1,
-            isLoaded: temp.isLoaded,
-            error: temp.error,
-            about: temp.about
-        }
-        );
-    }
-    const handlePrev = () => {
-        setTemp({
-            pageNo: temp.pageNo - 1,
-            isLoaded: temp.isLoaded,
-            error: temp.error,
-            about: temp.about
-        }
-        );
-    }
     return (
         <>
             {array.map((i, idx) => {

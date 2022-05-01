@@ -5,6 +5,7 @@ export default function Science() {
     const st = useContext(myContext);
     const [isLoaded, setIsLoaded] = useState(0);
     const [array, setArray] = st.a;
+    console.log(array);
     useEffect(() => {
         const apiUrl = `https://saurav.tech/NewsAPI/top-headlines/category/science/in.json`;
         fetch(apiUrl)

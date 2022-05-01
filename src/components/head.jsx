@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useContext } from "react";
 import { myContext } from "./body";
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Head() {
@@ -10,6 +11,7 @@ export default function Head() {
     const [navState, setNavState] = st.c;
     const [mobview, setMobview] = st.d;
     let width = window.innerWidth;
+    const history = useNavigate();
     const [keyword, setKeyword] = useState('');
     const fetchNewsss = () => {
         if (keyword == '') {
@@ -27,6 +29,7 @@ export default function Head() {
             }).catch(() => {
                 setTemp({ pageNo: 1, isLoaded: true, error: true, about: temp.about })
             })
+        history(`/search&query=${keyword}`);
     }
     return (
         <div className="navbar">
