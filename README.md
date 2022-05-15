@@ -1,3 +1,4 @@
+* This project is hosted on : https://626e54d9bc00b630a3089929--magnificent-jalebi-507581.netlify.app/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
